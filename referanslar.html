@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moilya Referanslar - Tamamlanan projeler ve müşteri yorumları.">
+  <title>Referanslar | Moilya</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">moilya</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="kurumsal.html" data-i18n="nav-corporate">Kurumsal</a></li>
+        <li><a href="hizmetlerimiz.html" data-i18n="nav-services">Hizmetlerimiz</a></li>
+        <li><a href="referanslar.html" data-i18n="nav-references" class="nav-active">Referanslar</a></li>
+        <li><a href="iletisim.html" data-i18n="nav-contact">İletişim</a></li>
+        <li class="nav-lang">
+          <button class="lang-btn active" id="langTR" onclick="setLang('tr')">
+            <img src="https://flagcdn.com/w20/tr.png" alt="TR" width="20"> TR
+          </button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">
+            <img src="https://flagcdn.com/w20/us.png" alt="EN" width="20"> EN
+          </button>
+          <button class="lang-btn" id="langAR" onclick="setLang('ar')">
+            <img src="https://flagcdn.com/w20/sa.png" alt="AR" width="20"> AR
+          </button>
+        </li>
+        <li class="nav-social">
+          <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" aria-label="Instagram" class="nav-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/moilya" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: linear-gradient(135deg,rgba(26,24,20,.82) 0%,rgba(26,24,20,.5) 100%), url('https://images.unsplash.com/photo-1600210492486-724fe621c173?w=1920&q=80');"></div>
+    <div class="page-hero-content container">
+      <span class="section-tag" data-i18n="nav-references">Referanslar</span>
+      <h1 data-i18n="ref-hero-title">Tamamlanan Projeler</h1>
+      <p data-i18n="ref-hero-desc">Mutlu müşterilerimiz ve hayata geçirdiğimiz özel tasarımlar.</p>
+    </div>
+  </section>
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <div class="container">
+      <ol>
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li data-i18n="nav-references">Referanslar</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-number" data-target="250">0</span>
+        <span class="stat-label" data-i18n="ref-stat-1">Tamamlanan Proje</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="18">0</span>
+        <span class="stat-label" data-i18n="ref-stat-2">Şehirde Teslimat</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="7">0</span>
+        <span class="stat-label" data-i18n="ref-stat-3">Yıllık Deneyim</span>
+      </div>
+      <div class="stat stat-no-plus">
+        <span class="stat-number" data-target="100">0</span>
+        <span class="stat-label" data-i18n="ref-stat-4">% Müşteri Memnuniyeti</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referans Listesi -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-header section-header-center">
+        <span class="section-tag">Referanslarımız</span>
+        <h2 class="section-title">Güven duyduğumuz markalar</h2>
+        <p class="section-desc">Farklı sektörlerden çözüm ortaklarımız.</p>
+      </div>
+
+      <!-- Sanayi & Kurumsal -->
+      <div class="ref-category">
+        <div class="ref-category-header">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+          <h3>Sanayi &amp; Kurumsal</h3>
+        </div>
+        <div class="ref-names-grid">
+          <div class="ref-name-card">
+            <span class="ref-initial">B</span>
+            <div><strong>Beta Enerji</strong><span>Organize Sanayi</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">G</span>
+            <div><strong>Genta Makine</strong><span>Organize Sanayi</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">K</span>
+            <div><strong>Karataş Kaymakamlığı</strong><span>Kamu Kurumu</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">M</span>
+            <div><strong>Mesa Elektrik</strong><span>Sanayi</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eğitim -->
+      <div class="ref-category">
+        <div class="ref-category-header">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          <h3>Eğitim Kurumları</h3>
+        </div>
+        <div class="ref-names-grid">
+          <div class="ref-name-card">
+            <span class="ref-initial">N</span>
+            <div><strong>Natürel Vip Eğitim Kurumları</strong><span>Özel Okul</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">D</span>
+            <div><strong>Dördüncü Boyut Eğitim Kurumları</strong><span>Özel Okul</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">E</span>
+            <div><strong>Etap Eğitim Kurumları</strong><span>Özel Okul</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kafe & Restaurant -->
+      <div class="ref-category">
+        <div class="ref-category-header">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          <h3>Kafe &amp; Restaurant</h3>
+        </div>
+        <div class="ref-names-grid">
+          <div class="ref-name-card">
+            <span class="ref-initial">M</span>
+            <div><strong>Monarşi</strong><span>Uğur Mumcu</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">Z</span>
+            <div><strong>Zuzu</strong><span>Uğur Mumcu</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">NK</span>
+            <div><strong>Nişantaşı Kruvasan</strong><span>Uğur Mumcu &amp; Dörtyol</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">C</span>
+            <div><strong>Curlique</strong><span>Uğur Mumcu</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">MG</span>
+            <div><strong>Maide Garden</strong><span>Güzelyalı</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">DN</span>
+            <div><strong>Day &amp; Night</strong><span>Uğur Mumcu</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">P</span>
+            <div><strong>Pote</strong><span>Uğur Mumcu &amp; Gazipaşa</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">CS</span>
+            <div><strong>Cliffside</strong><span>Süleyman Demirel</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">D</span>
+            <div><strong>Dunk</strong><span>Uğur Mumcu</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">OK</span>
+            <div><strong>Om Kleem</strong><span>Uğur Mumcu</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">CH</span>
+            <div><strong>Cluck House</strong><span>Tüm Şubeler</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">BB</span>
+            <div><strong>Bull Burger</strong><span>Gazipaşa</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">TK</span>
+            <div><strong>Tatlıcı Köse</strong><span>Hayalpark</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">OK</span>
+            <div><strong>Osmanlı Kahvecisi</strong><span>Gazipaşa</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">BB</span>
+            <div><strong>Bun the Bun</strong><span>M1 Real</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">HO</span>
+            <div><strong>Hatay Olivia Cafe</strong><span>Dörtyol</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">G</span>
+            <div><strong>Gemii</strong><span>Dörtyol</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">TF</span>
+            <div><strong>The Fam</strong><span></span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">C</span>
+            <div><strong>Chuko</strong><span></span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">BE</span>
+            <div><strong>Bayram Efendi Osmanlı Kahvecisi</strong><span></span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">TB</span>
+            <div><strong>The Bull Co</strong><span></span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">PF</span>
+            <div><strong>Petit Fattoush</strong><span></span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">FG</span>
+            <div><strong>Fırın Go</strong><span></span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">V</span>
+            <div><strong>Venedik</strong><span></span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">KK</span>
+            <div><strong>Kiraz Kardeşler</strong><span></span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">TQ</span>
+            <div><strong>The Qulis</strong><span>Kırşehir</span></div>
+          </div>
+          <div class="ref-name-card">
+            <span class="ref-initial">LC</span>
+            <div><strong>Local Coffee</strong><span>Dörtyol</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--color-cream); text-align:center;">
+    <div class="container">
+      <span class="section-tag">Sıradaki Proje</span>
+      <h2 class="section-title" style="margin-bottom:20px;">Sizin markanızı da ekleyelim</h2>
+      <p style="color:var(--color-text-light); max-width:480px; margin:0 auto 32px;">Projenizin mobilya ihtiyaçlarını birlikte değerlendirelim.</p>
+      <a href="iletisim.html" class="btn btn-primary">Teklif Al</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-text">moilya</span></a>
+        <p data-i18n="footer-desc">Özel tasarım mobilya üretiminde güvenilir adresiniz.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/moilya" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer-links-title">Hızlı Bağlantılar</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+          <li><a href="kurumsal.html" data-i18n="nav-corporate">Kurumsal</a></li>
+          <li><a href="hizmetlerimiz.html" data-i18n="nav-services">Hizmetlerimiz</a></li>
+          <li><a href="referanslar.html" data-i18n="nav-references">Referanslar</a></li>
+          <li><a href="iletisim.html" data-i18n="nav-contact">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer-col-title">Koleksiyonlar</h4>
+        <ul>
+          <li><a href="hizmetlerimiz.html" data-i18n="col-salon-t">Salon Mobilyaları</a></li>
+          <li><a href="hizmetlerimiz.html" data-i18n="col-yatak-t">Yatak Odası</a></li>
+          <li><a href="hizmetlerimiz.html" data-i18n="col-yemek-t">Yemek Odası</a></li>
+          <li><a href="hizmetlerimiz.html" data-i18n="col-mutfak-t">Mutfak Dolapları</a></li>
+          <li><a href="hizmetlerimiz.html" data-i18n="col-ofis-t">Ofis Mobilyaları</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4 data-i18n="footer-ig-title">Instagram</h4>
+        <p data-i18n="footer-ig-p">Yeni üretimler ve projeler için bizi takip edin.</p>
+        <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" class="btn btn-outline btn-instagram-footer">@moilyacom</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer-copy">&copy; 2026 Moilya. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('header').classList.add('scrolled');
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+    // Stats counter
+    const stats = document.querySelectorAll('.stat-number');
+    const observer = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { stats.forEach(s => animateCounter(s)); observer.disconnect(); }
+    }, { threshold: 0.5 });
+    const statsEl = document.querySelector('.stats');
+    if (statsEl) observer.observe(statsEl);
+    // Fade in
+    document.querySelectorAll('.fade-in').forEach(el => {
+      new IntersectionObserver(([e]) => { if(e.isIntersecting) el.classList.add('visible'); }, {threshold:0.15}).observe(el);
+    });
+  </script>
+</body>
+</html>

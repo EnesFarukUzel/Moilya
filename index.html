@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moilya - Özel tasarım mobilya üretimi. Salon, yatak odası, yemek odası ve ofis mobilyalarında kalite ve estetik.">
+  <title>Moilya | Özel Tasarım Mobilya</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo">
+        <span class="logo-text">moilya</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="kurumsal.html" data-i18n="nav-corporate">Kurumsal</a></li>
+        <li><a href="hizmetlerimiz.html" data-i18n="nav-services">Hizmetlerimiz</a></li>
+        <li><a href="referanslar.html" data-i18n="nav-references">Referanslar</a></li>
+        <li><a href="iletisim.html" data-i18n="nav-contact">İletişim</a></li>
+        <li class="nav-lang">
+          <button class="lang-btn active" id="langTR" onclick="setLang('tr')">
+            <img src="https://flagcdn.com/w20/tr.png" alt="TR" width="20"> TR
+          </button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">
+            <img src="https://flagcdn.com/w20/us.png" alt="EN" width="20"> EN
+          </button>
+          <button class="lang-btn" id="langAR" onclick="setLang('ar')">
+            <img src="https://flagcdn.com/w20/sa.png" alt="AR" width="20"> AR
+          </button>
+        </li>
+        <li class="nav-social">
+          <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" aria-label="Instagram" class="nav-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/moilya" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="anasayfa">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="hero-tag">Özel Tasarım Mobilya</p>
+      <h1 class="hero-title">Yaşam alanlarınıza<br><em>değer katan</em> tasarımlar</h1>
+      <p class="hero-desc">Moilya olarak el işçiliği ve modern tasarımı bir araya getirerek, evinize özel mobilyalar üretiyoruz.</p>
+      <div class="hero-actions">
+        <a href="#hizmetler" class="btn btn-primary">Hizmetlerimizi Keşfet</a>
+        <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" class="btn btn-outline">Instagram'da İncele</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Keşfet</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-number" data-target="250">0</span>
+        <span class="stat-label">Tamamlanmış Proje</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="120">0</span>
+        <span class="stat-label">Müşteri Portföyü</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="300">0</span>
+        <span class="stat-label">Ürün Çeşitliliği</span>
+      </div>
+      <div class="stat stat-no-plus">
+        <span class="stat-number" data-target="45">0</span>
+        <span class="stat-label">Uzman Personel</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="hakkimizda">
+    <div class="container about-grid">
+      <div class="about-images">
+        <div class="about-img about-img-1"></div>
+        <div class="about-img about-img-2"></div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Hakkımızda</span>
+        <h2 class="section-title">Zanaatkarlık ve<br>modern tasarımın buluşması</h2>
+        <p class="about-text">Moilya, özel mobilya üretiminde kalite ve estetiği bir araya getiren bir markadır. Her parçayı titizlikle tasarlıyor, kaliteli malzemelerle üretiyor ve yaşam alanlarınıza özel çözümler sunuyoruz.</p>
+        <p class="about-text">Salon takımlarından yatak odası mobilyalarına, mutfak dolaplarından ofis çözümlerine kadar geniş bir yelpazede hizmet veriyoruz. Müşterilerimizin hayallerini gerçeğe dönüştürmek bizim tutkumuz.</p>
+        <ul class="about-features">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Özel ölçü ve tasarım
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Birinci sınıf malzeme
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Profesyonel montaj
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Kişiye özel üretim
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hizmetler">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hizmetlerimiz</span>
+        <h2 class="section-title">Büyük ölçekli projeler için<br>güvenilir çözümler</h2>
+        <p class="section-desc">Her ölçekte ve her sektörde mobilya üretimi yapıyoruz.</p>
+      </div>
+      <div class="home-services-grid">
+
+        <a href="hizmetlerimiz.html" class="home-svc-card">
+          <div class="home-svc-img" style="background-image:url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80')"></div>
+          <div class="home-svc-overlay">
+            <h3>Toplu Konut Projeleri</h3>
+            <p>Yüzlerce daire için standart veya özelleştirilmiş mobilya paketleri.</p>
+            <span class="home-svc-link">Bilgi için tıklayınız →</span>
+          </div>
+        </a>
+
+        <a href="hizmetlerimiz.html" class="home-svc-card">
+          <div class="home-svc-img" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80')"></div>
+          <div class="home-svc-overlay">
+            <h3>Fabrika İdari Binaları</h3>
+            <p>Ofisten yemekhanesine, resepsiyondan toplantı salonuna komple donatım.</p>
+            <span class="home-svc-link">Bilgi için tıklayınız →</span>
+          </div>
+        </a>
+
+        <a href="hizmetlerimiz.html" class="home-svc-card">
+          <div class="home-svc-img" style="background-image:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80')"></div>
+          <div class="home-svc-overlay">
+            <h3>Otel Projeleri</h3>
+            <p>Butik otellerden zincir otellere, oda ve ortak alan mobilyası.</p>
+            <span class="home-svc-link">Bilgi için tıklayınız →</span>
+          </div>
+        </a>
+
+        <a href="hizmetlerimiz.html" class="home-svc-card">
+          <div class="home-svc-img" style="background-image:url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80')"></div>
+          <div class="home-svc-overlay">
+            <h3>Kafe &amp; Restaurant Projeleri</h3>
+            <p>Markanızın kimliğini yansıtan, konsepte özel atmosferler.</p>
+            <span class="home-svc-link">Bilgi için tıklayınız →</span>
+          </div>
+        </a>
+
+        <a href="hizmetlerimiz.html" class="home-svc-card">
+          <div class="home-svc-img" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80')"></div>
+          <div class="home-svc-overlay">
+            <h3>Mimar / İç Mimar İş Birlikleri</h3>
+            <p>Tasarım dosyasından üretime, projenin vizyonunu aynen hayata geçiriyoruz.</p>
+            <span class="home-svc-link">Bilgi için tıklayınız →</span>
+          </div>
+        </a>
+
+        <a href="hizmetlerimiz.html" class="home-svc-card">
+          <div class="home-svc-img" style="background-image:url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80')"></div>
+          <div class="home-svc-overlay">
+            <h3>B2B Mobilya Projeleri</h3>
+            <p>Bayiler ve kurumsal alıcılar için fason üretim ve lojistik destek.</p>
+            <span class="home-svc-link">Bilgi için tıklayınız →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="process section">
+    <div class="container">
+      <div class="section-header section-header-center">
+        <span class="section-tag">Süreç</span>
+        <h2 class="section-title">Fikirden teslimata</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-number">01</div>
+          <h3>Danışmanlık</h3>
+          <p>İhtiyaçlarınızı dinliyor, alanınızı anlıyor ve size en uygun çözümleri birlikte belirliyoruz.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">02</div>
+          <h3>Tasarım</h3>
+          <p>Ölçü, malzeme ve renk seçeneklerini birlikte belirliyor, tasarımı onayınıza sunuyoruz.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">03</div>
+          <h3>Üretim</h3>
+          <p>Atölyemizde masif ahşap malzemeler usta ellerde özenle işleniyor.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-number">04</div>
+          <h3>Teslimat</h3>
+          <p>Gönderim öncesi ürün fotoğrafı paylaşıyor, ücretsiz teslimat ve kurulum yapıyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery section" id="galeri">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Galeri</span>
+        <h2 class="section-title">Tamamlanan projelerimiz</h2>
+        <p class="section-desc">Moilya atölyesinde üretilen mobilyalardan örnekler. Kendi görsellerinizi eklediğimizde bu alan güncellenecek.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item-1"></div>
+        <div class="gallery-item gallery-item-2"></div>
+        <div class="gallery-item gallery-item-3"></div>
+        <div class="gallery-item gallery-item-4"></div>
+        <div class="gallery-item gallery-item-5"></div>
+        <div class="gallery-item gallery-item-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="instagram section" id="instagram">
+    <div class="container">
+      <div class="section-header section-header-center">
+        <span class="section-tag">Instagram</span>
+        <h2 class="section-title">@moilyacom</h2>
+        <p class="section-desc">Yeni üretimlerimizi ve tamamlanan projelerimizi Instagram hesabımızdan takip edin.</p>
+      </div>
+      <div class="instagram-embed-grid">
+        <div class="ig-embed-item">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Da79SxdIq-A/" data-instgrm-version="14"></blockquote>
+        </div>
+        <div class="ig-embed-item">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Da5hCzsIH5F/" data-instgrm-version="14"></blockquote>
+        </div>
+        <div class="ig-embed-item">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Da3IEBboJec/" data-instgrm-version="14"></blockquote>
+        </div>
+        <div class="ig-embed-item">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DYwzNgAIsZ3/" data-instgrm-version="14"></blockquote>
+        </div>
+        <div class="ig-embed-item">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DYtq-pyoAyU/" data-instgrm-version="14"></blockquote>
+        </div>
+        <div class="ig-embed-item">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DX1i2HmCGeM/" data-instgrm-version="14"></blockquote>
+        </div>
+      </div>
+      <script async src="//www.instagram.com/embed.js"></script>
+      <div class="instagram-cta">
+        <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          @moilyacom Takip Et
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-bar">
+    <div class="container features-grid">
+      <div class="feature">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div>
+          <strong>Özel Üretim</strong>
+          <span>Size özel tasarım</span>
+        </div>
+      </div>
+      <div class="feature">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+        <div>
+          <strong>Kaliteli Malzeme</strong>
+          <span>Dayanıklı ve estetik</span>
+        </div>
+      </div>
+      <div class="feature">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <div>
+          <strong>Profesyonel Montaj</strong>
+          <span>Teslimat dahil</span>
+        </div>
+      </div>
+      <div class="feature">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>
+        <div>
+          <strong>@moilyacom</strong>
+          <span>Instagram'dan ulaşın</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="iletisim">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-tag">İletişim</span>
+        <h2 class="section-title">Projenizi birlikte planlayalım</h2>
+        <p class="contact-desc">Teklif almak için formu doldurun veya Instagram hesabımızdan bize ulaşın.</p>
+        <ul class="contact-details">
+          <li>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <div>
+              <strong>Telefon</strong>
+              <span><a href="tel:+902121234567">0212 123 45 67</a></span>
+              <span><a href="tel:+905551234567">0555 123 45 67</a> (WhatsApp)</span>
+            </div>
+          </li>
+          <li>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <strong>E-posta</strong>
+              <span><a href="mailto:info@moilya.com">info@moilya.com</a></span>
+            </div>
+          </li>
+          <li>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>Adres</strong>
+              <span>İstanbul, Türkiye</span>
+            </div>
+          </li>
+          <li>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <div>
+              <strong>Instagram</strong>
+              <span><a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener">@moilyacom</a></span>
+            </div>
+          </li>
+          <li>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <strong>Çalışma Saatleri</strong>
+              <span>Pzt - Cmt: 09:00 - 19:00</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Ad Soyad</label>
+          <input type="text" id="name" name="name" required placeholder="Adınız ve soyadınız">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">E-posta</label>
+            <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="+90 5XX XXX XX XX">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="category">İlgilendiğiniz Kategori</label>
+          <select id="category" name="category">
+            <option value="">Seçiniz</option>
+            <option value="salon">Salon Mobilyaları</option>
+            <option value="yatak">Yatak Odası</option>
+            <option value="yemek">Yemek Odası</option>
+            <option value="mutfak">Mutfak Dolapları</option>
+            <option value="ofis">Ofis Mobilyaları</option>
+            <option value="ozel">Özel Tasarım</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Mesajınız</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Projeniz hakkında kısa bilgi verin..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Gönder</button>
+        <p class="form-success" id="formSuccess">Mesajınız alındı! En kısa sürede size dönüş yapacağız.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+      <a href="#" class="logo">
+        <span class="logo-text">moilya</span>
+      </a>
+        <p>Özel tasarım mobilya üretiminde güvenilir adresiniz. Yaşam alanlarınıza değer katıyoruz.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Hızlı Bağlantılar</h4>
+        <ul>
+          <li><a href="#anasayfa">Ana Sayfa</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#koleksiyonlar">Koleksiyonlar</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Koleksiyonlar</h4>
+        <ul>
+          <li><a href="#koleksiyonlar">Salon Mobilyaları</a></li>
+          <li><a href="#koleksiyonlar">Yatak Odası</a></li>
+          <li><a href="#koleksiyonlar">Yemek Odası</a></li>
+          <li><a href="#koleksiyonlar">Mutfak Dolapları</a></li>
+          <li><a href="#koleksiyonlar">Ofis Mobilyaları</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Instagram</h4>
+        <p>Yeni üretimler ve projeler için bizi takip edin.</p>
+        <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" class="btn btn-outline btn-instagram-footer">@moilyacom</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Moilya. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

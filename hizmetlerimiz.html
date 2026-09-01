@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moilya Hizmetlerimiz - Salon, yatak odası, mutfak, yemek odası ve ofis mobilyaları.">
+  <title>Hizmetlerimiz | Moilya</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">moilya</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="kurumsal.html" data-i18n="nav-corporate">Kurumsal</a></li>
+        <li><a href="hizmetlerimiz.html" data-i18n="nav-services" class="nav-active">Hizmetlerimiz</a></li>
+        <li><a href="referanslar.html" data-i18n="nav-references">Referanslar</a></li>
+        <li><a href="iletisim.html" data-i18n="nav-contact">İletişim</a></li>
+        <li class="nav-lang">
+          <button class="lang-btn active" id="langTR" onclick="setLang('tr')">
+            <img src="https://flagcdn.com/w20/tr.png" alt="TR" width="20"> TR
+          </button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">
+            <img src="https://flagcdn.com/w20/us.png" alt="EN" width="20"> EN
+          </button>
+          <button class="lang-btn" id="langAR" onclick="setLang('ar')">
+            <img src="https://flagcdn.com/w20/sa.png" alt="AR" width="20"> AR
+          </button>
+        </li>
+        <li class="nav-social">
+          <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" aria-label="Instagram" class="nav-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/moilya" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: linear-gradient(135deg,rgba(26,24,20,.82) 0%,rgba(26,24,20,.5) 100%), url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1920&q=80');"></div>
+    <div class="page-hero-content container">
+      <span class="section-tag" data-i18n="nav-services">Hizmetlerimiz</span>
+      <h1 data-i18n="svc-hero-title">Her Oda, Her İhtiyaç</h1>
+      <p data-i18n="svc-hero-desc">Salon takımlarından ofis çözümlerine kadar tüm mobilya ihtiyaçlarınız için buradayız.</p>
+    </div>
+  </section>
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <div class="container">
+      <ol>
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li data-i18n="nav-services">Hizmetlerimiz</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Services Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header section-header-center">
+        <span class="section-tag">Hizmetlerimiz</span>
+        <h2 class="section-title">Büyük ölçekli projeler için<br>güvenilir çözümler</h2>
+        <p class="section-desc">Toplu konuttan otellere, fabrikalardan restoranlar kadar her ölçekte mobilya üretiyoruz.</p>
+      </div>
+      <div class="services-list">
+
+        <div class="service-item fade-in">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80')"></div>
+          <div class="service-body">
+            <span class="section-tag">01</span>
+            <h3>Toplu Konut Projeleri</h3>
+            <p>Konut projelerinde tutarlı kalite ve hızlı teslimat bizim uzmanlığımız. Yüzlerce daire için standart ya da özelleştirilmiş mobilya paketleri üretiyoruz. Müteahhitler ve proje geliştiricilerle uzun vadeli iş birliği yapıyoruz.</p>
+            <ul class="service-features">
+              <li>Toplu üretimde maliyet avantajı</li>
+              <li>Daire tiplerine göre özel paketler</li>
+              <li>Koordineli teslimat planlaması</li>
+              <li>Kurulum ekibi desteği</li>
+            </ul>
+            <a href="iletisim.html" class="btn btn-primary">Teklif Al →</a>
+          </div>
+        </div>
+
+        <div class="service-item service-item-reverse fade-in">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&q=80')"></div>
+          <div class="service-body">
+            <span class="section-tag">02</span>
+            <h3>Fabrika İdari Binaları</h3>
+            <p>Üretim tesislerinin idari bölümleri için dayanıklı, fonksiyonel ve temsili mobilya çözümleri sunuyoruz. Yönetim katlarından toplantı salonlarına, resepsiyondan dinlenme alanlarına kadar komple donatım yapıyoruz.</p>
+            <ul class="service-features">
+              <li>Yönetici ve çalışan ofis mobilyası</li>
+              <li>Toplantı &amp; konferans salonları</li>
+              <li>Resepsiyon &amp; lobi alanları</li>
+              <li>Yemekhane &amp; sosyal alanlar</li>
+            </ul>
+            <a href="iletisim.html" class="btn btn-primary">Teklif Al →</a>
+          </div>
+        </div>
+
+        <div class="service-item fade-in">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80')"></div>
+          <div class="service-body">
+            <span class="section-tag">03</span>
+            <h3>Otel Projeleri</h3>
+            <p>Butik otellerden zincir otellere, her ölçekte otel odası ve ortak alan mobilyası üretiyoruz. Estetik, dayanıklılık ve misafir konforu bir arada — otel konseptinize uygun özel tasarımlar hayata geçiriyoruz.</p>
+            <ul class="service-features">
+              <li>Oda başlığı, konsol, dolap takımları</li>
+              <li>Lobi &amp; resepsiyon mobilyası</li>
+              <li>Restoran &amp; bar alanları</li>
+              <li>Toplu üretim &amp; tedarik yönetimi</li>
+            </ul>
+            <a href="iletisim.html" class="btn btn-primary">Teklif Al →</a>
+          </div>
+        </div>
+
+        <div class="service-item service-item-reverse fade-in">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80')"></div>
+          <div class="service-body">
+            <span class="section-tag">04</span>
+            <h3>Kafe &amp; Restaurant Projeleri</h3>
+            <p>Markanızın kimliğini yansıtan, misafirlerin tekrar gelmek isteyeceği atmosferler yaratıyoruz. Masadan sandalyeye, bankodan dekor raflarına kadar tüm mobilya ihtiyaçlarınızı karşılıyoruz.</p>
+            <ul class="service-features">
+              <li>Masa &amp; sandalye grupları</li>
+              <li>Banka &amp; bar tezgahları</li>
+              <li>Dekor raf &amp; vitrin sistemleri</li>
+              <li>Konsepte özel tasarım</li>
+            </ul>
+            <a href="iletisim.html" class="btn btn-primary">Teklif Al →</a>
+          </div>
+        </div>
+
+        <div class="service-item fade-in">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=900&q=80')"></div>
+          <div class="service-body">
+            <span class="section-tag">05</span>
+            <h3>Mimar / İç Mimar İş Birlikleri</h3>
+            <p>Mimar ve iç mimarlarla ortak çalışmak bizim için öncelikli. Tasarım dosyalarını üretim sürecine doğrudan entegre ediyoruz. Teknik detaylara hakim üretim ekibimizle projenizin vizyonunu aynen hayata geçiriyoruz.</p>
+            <ul class="service-features">
+              <li>Teknik çizim &amp; imalat uyumu</li>
+              <li>Prototip &amp; numune üretimi</li>
+              <li>Özel malzeme &amp; kaplama seçenekleri</li>
+              <li>Proje bazlı fiyatlandırma</li>
+            </ul>
+            <a href="iletisim.html" class="btn btn-primary">Teklif Al →</a>
+          </div>
+        </div>
+
+        <div class="service-item service-item-reverse fade-in">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=900&q=80')"></div>
+          <div class="service-body">
+            <span class="section-tag">06</span>
+            <h3>B2B Mobilya Projeleri</h3>
+            <p>Bayiler, toptancılar ve kurumsal alıcılar için düzenli üretim kapasitesi sunuyoruz. Marka etiketleme, özel ambalaj ve lojistik desteğiyle iş ortaklarımıza uçtan uca hizmet veriyoruz.</p>
+            <ul class="service-features">
+              <li>Fason &amp; OEM üretim</li>
+              <li>Düzenli sipariş yönetimi</li>
+              <li>Özel ambalaj &amp; etiketleme</li>
+              <li>Lojistik &amp; ihracat desteği</li>
+            </ul>
+            <a href="iletisim.html" class="btn btn-primary">Teklif Al →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FSC Cycle -->
+  <section class="section fsc-section">
+    <div class="container">
+      <div class="section-header section-header-center">
+        <span class="section-tag">Sürdürülebilirlik</span>
+        <h2 class="section-title">Doğadan gelir, doğaya döner</h2>
+        <p class="section-desc">FSC sertifikalı ahşap kullanarak ürettiğimiz her mobilya bu döngünün bir parçasıdır.</p>
+      </div>
+
+      <div class="fsc-cycle-wrapper">
+        <!-- Döngü -->
+        <div class="fsc-cycle">
+          <!-- Daire yaylar -->
+          <svg class="fsc-ring" viewBox="0 0 560 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+                <path d="M0,1 L9,5 L0,9 Z" fill="#8b6914"/>
+              </marker>
+            </defs>
+            <!-- R=160, merkez=280,280. İkon merkezleri: Üst(280,70) Sağ(490,280) Alt(280,490) Sol(70,280) -->
+            <!-- İkon yarıçapı=36. Oklar ikonun dışından çıkıp diğerinin dışına girer. -->
+            <!-- Üst→Sağ: 280,70'den başla (sağ kenar: +36) → 490,280 (üst kenar: -36) -->
+            <path d="M 316,82 A 160 160 0 0 1 478,244" stroke="#8b6914" stroke-width="2.5" fill="none" stroke-linecap="round" marker-end="url(#arrow)"/>
+            <!-- Sağ→Alt: 490,280 (alt kenar: +36) → 280,490 (sağ kenar: +36) -->
+            <path d="M 478,316 A 160 160 0 0 1 316,478" stroke="#8b6914" stroke-width="2.5" fill="none" stroke-linecap="round" marker-end="url(#arrow)"/>
+            <!-- Alt→Sol: 280,490 (sol kenar: -36) → 70,280 (alt kenar: +36) -->
+            <path d="M 244,478 A 160 160 0 0 1 82,316" stroke="#8b6914" stroke-width="2.5" fill="none" stroke-linecap="round" marker-end="url(#arrow)"/>
+            <!-- Sol→Üst: 70,280 (üst kenar: -36) → 280,70 (sol kenar: -36) -->
+            <path d="M 82,244 A 160 160 0 0 1 244,82" stroke="#8b6914" stroke-width="2.5" fill="none" stroke-linecap="round" marker-end="url(#arrow)"/>
+          </svg>
+
+          <!-- 4 düğüm -->
+          <!-- Üst: Orman -->
+          <div class="fsc-node fsc-node-top">
+            <div class="fsc-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L8 8H4l4 5H5l7 9 7-9h-3l4-5h-4L12 2z"/>
+              </svg>
+            </div>
+            <span class="fsc-label">Orman &amp; Ağaç</span>
+          </div>
+
+          <!-- Sağ: Üretim -->
+          <div class="fsc-node fsc-node-right">
+            <div class="fsc-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="7" width="20" height="14" rx="2"/>
+                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+                <line x1="12" y1="12" x2="12" y2="16"/>
+                <line x1="10" y1="14" x2="14" y2="14"/>
+              </svg>
+            </div>
+            <span class="fsc-label">Üretim</span>
+          </div>
+
+          <!-- Alt: Ev / Kullanım -->
+          <div class="fsc-node fsc-node-bottom">
+            <div class="fsc-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <span class="fsc-label">Yaşam Alanı</span>
+          </div>
+
+          <!-- Sol: Geri Dönüşüm -->
+          <div class="fsc-node fsc-node-left">
+            <div class="fsc-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="1 4 1 10 7 10"/>
+                <polyline points="23 20 23 14 17 14"/>
+                <path d="M20.49 9A9 9 0 005.64 5.64L1 10M23 14l-4.64 4.36A9 9 0 013.51 15"/>
+              </svg>
+            </div>
+            <span class="fsc-label">Geri Dönüşüm</span>
+          </div>
+
+          <!-- Merkez FSC -->
+          <div class="fsc-center">
+            <div class="fsc-badge">FSC®</div>
+            <p class="fsc-cert-title">Sertifikalı Üretim</p>
+            <p class="fsc-cert-text">Kullandığımız tüm ahşap malzemeler, ormanların sürdürülebilir şekilde yönetildiğini belgeleyen <strong>FSC® sertifikası</strong> kapsamındadır. Bu sertifika; ağaç kesiminin kontrollü yapıldığını, biyoçeşitliliğin korunduğunu ve yerel toplulukların haklarına saygı gösterildiğini güvence altına alır.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-text">moilya</span></a>
+        <p data-i18n="footer-desc">Özel tasarım mobilya üretiminde güvenilir adresiniz.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/moilya" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer-links-title">Hızlı Bağlantılar</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+          <li><a href="kurumsal.html" data-i18n="nav-corporate">Kurumsal</a></li>
+          <li><a href="hizmetlerimiz.html" data-i18n="nav-services">Hizmetlerimiz</a></li>
+          <li><a href="referanslar.html" data-i18n="nav-references">Referanslar</a></li>
+          <li><a href="iletisim.html" data-i18n="nav-contact">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer-col-title">Koleksiyonlar</h4>
+        <ul>
+          <li><a href="#" data-i18n="col-salon-t">Salon Mobilyaları</a></li>
+          <li><a href="#" data-i18n="col-yatak-t">Yatak Odası</a></li>
+          <li><a href="#" data-i18n="col-yemek-t">Yemek Odası</a></li>
+          <li><a href="#" data-i18n="col-mutfak-t">Mutfak Dolapları</a></li>
+          <li><a href="#" data-i18n="col-ofis-t">Ofis Mobilyaları</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4 data-i18n="footer-ig-title">Instagram</h4>
+        <p data-i18n="footer-ig-p">Yeni üretimler ve projeler için bizi takip edin.</p>
+        <a href="https://www.instagram.com/moilyacom/" target="_blank" rel="noopener" class="btn btn-outline btn-instagram-footer">@moilyacom</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer-copy">&copy; 2026 Moilya. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('header').classList.add('scrolled');
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+    document.querySelectorAll('.fade-in').forEach(el => {
+      new IntersectionObserver(([e]) => { if(e.isIntersecting) el.classList.add('visible'); }, {threshold:0.15}).observe(el);
+    });
+  </script>
+</body>
+</html>
